@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSBD Official Group Joining Request Form</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Noto+Serif+Bengali:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- CSS Connection-->
+     <link rel="stylesheet" href="style.css">
+     <script src="script.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="start-page">
+            <h1>BSBD OFFICIAL MULTIPLAYER GROUP JOINING REQUEST FORM</h1>
+            <p>Welcome to the BSBD official multiplayer messenger group joining request form. Please read the rules carefully before proceeding.</p>
+            <div class="rules-caption">Before you start please read:</div>
+            <div class="rules">
+                <ul>
+                    <li><i class="fas fa-check"></i> Provide accurate info & ensure all questions are answered properly.</li>
+                    <li><i class="fas fa-bus"></i> Must join at least 1 trip per day & a total of 5 trips per week.</li>
+                    <li><i class="fa fa-check"></i> Follow the group guidelines.</li>
+                    <li><i class="fa fa-check"></i> The info will be used during tournaments, photo events & contests.</li>
+                    <li><i class="fas fa-volume-up"></i> Use appropriate language.</li>
+                    <li><i class="fas fa-lightbulb"></i> Be respectful and friendly to other members.</li>
+                </ul>
+            </div> 
+            <div class="toggle-lang" role="alert" aria-live="assertive" id="lang-alert">
+                <button aria-label="Switch to Bengali" onclick="toggleLanguage()">Switch to বাংলা</button>
+            </div>
+
+            <button class="btn-start" onclick="startForm()">START</button>
+        </div>
+    
+        <div class="form-page">
+            <h2 class="rules-caption">Registration Form</h2>
+            <form id="my-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Sakil Islam" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="game id">Game ID:</label>
+                    <input type="text" id="game id" name="game id" placeholder="e.g.  SAKIL_ISLAM" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="uid">UID:</label> <p>To collect your UID open game > settings > profile > Copy UID</p>
+                    <input type="text" id="uid" name="uid" placeholder="e.g." required>
+                </div>
+                <div class="form-group">
+                    <label for="fb link">Facebook ID Link (To add to group):</label>
+                    <input type="text" id="fb link" name="fb link" placeholder="e.g.    https://facebook.com/yourprofile" required>
+                </div>
+                <div class="form-group">
+                    <label for="yt link">YouTube Channel Link (If you have):</label>
+                    <input type="text" id="yt link" name="yt link" placeholder="e.g.    https://youtube.com/username">
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="button" class="clearform" onclick="clearForm()">Clear Form</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape-tire"></div>
+    <div class="shape shape-light"></div>
+    <div class="shape shape-horn"></div>
+    <div class="shape shape-check"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+ /* General Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #9e1b32, #e94b61); /* Dark red gradient background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif; /* Default font for English */
+}
+
+.bengali {
+    font-family: 'Noto Serif Bengali', serif; /* Bengali font for the entire page */
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .btn-start, .submit-btn {
+        font-size: 14px;
+    }
+}
+
+
+.start-page {
+    padding: 40px;
+    text-align: center;
+}
+
+.start-page h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.rules-caption {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.rules {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    color: #555;
+    text-align: left;
+}
+
+.rules ul {
+    list-style: none;
+}
+
+.rules li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.rules li i {
+    margin-right: 10px;
+    color: #9e1b32; /* Dark red for icons */
+}
+
+.toggle-lang {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.toggle-lang button {
+    background: #9e1b32; /* Dark red background for the button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.toggle-lang button:hover {
+    background: #e94b61; /* Light red for hover */
+}
+
+.btn-start {
+    background: #e94b61; /* Light red background for start button */
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    width: 100%; /* Make the button span the full width of the section */
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-family: 'Poppins', sans-serif, 'Noto Serif Bengali', serif;
+}
+
+.btn-start:hover {
+    transform: scale(1.05);
+}
+
+/* Form Page */
+.form-page {
+    display: none;
+    padding: 40px;
+}
+
+.form-page.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Underline Input and Textarea Styles */
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 2px solid #9e1b32; /* Dark red underline */
+    background: transparent;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.form-group input::placeholder {
+    opacity: 22%;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #e94b61; /* Light red when focused */
+}
+
+/* Applying font for the placeholder */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    font-family: 'Poppins', sans-serif, 'Noto Serif Bengali', serif; /* English font for placeholder text */
+}
+
+/* Bengali font for placeholder when language is switched */
+.bengali .form-group input::placeholder,
+.bengali .form-group textarea::placeholder {
+    font-family: 'Noto Serif Bengali', serif; /* Bengali font for placeholder text */
+}
+
+.submit-btn {
+    background: #9e1b32; /* Dark red background for the submit button */
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: auto; /* Keep the width of the submit button appropriate */
+    margin-top: 20px; /* Add some margin for spacing */
+    font-family: 'Poppins', sans-serif, 'Noto Serif Bengali', serif;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+}
+
+.clearform {
+    background: #d7c9cc; /* Dark red background for the submit button */
+    color: #000000;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: auto; /* Keep the width of the submit button appropriate */
+    margin-top: 20px; /* Add some margin for spacing */
+    font-family: 'Poppins', sans-serif, 'Noto Serif Bengali', serif;
+}
+
+/* Shapes for fun design */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: float 6s infinite;
+}
+
+.shape1 {
+    width: 150px;
+    height: 150px;
+    background: #d8d3de; /* Dark red shape */
+    top: 10%;
+    left: 5%;
+}
+
+.shape2 {
+    width: 200px;
+    height: 200px;
+    background: #e94b61; /* Light red shape */
+    bottom: 15%;
+    right: 10%;
+}
+
+.shape-tire {
+    width: 100px;
+    height: 100px;
+    background: #444;
+    border-radius: 50%;
+    top: 30%;
+    left: 60%;
+}
+
+.shape-light {
+    width: 80px;
+    height: 80px;
+    background: #ffea00;
+    border-radius: 50%;
+    top: 40%;
+    right: 15%;
+}
+
+.shape-horn {
+    width: 120px;
+    height: 50px;
+    background: #ff5722;
+    border-radius: 30px;
+    top: 60%;
+    left: 30%;
+}
+
+.shape-check {
+    width: 100px;
+    height: 100px;
+    background: #4caf50; /* Green for checkmark */
+    border-radius: 50%;
+    top: 50%;
+    left: 15%;
+}
+
+.rules-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #e5ff0032;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
