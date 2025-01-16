@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
+    overflow-y: hidden;
     font-family: 'Poppins', sans-serif; /* Default font for English */
 }
 
@@ -41,7 +41,7 @@ body {
         width: 100%;
         margin: 20px;
     }
-
+    
     .btn-start, .submit-btn {
         font-size: 14px;
     }
@@ -55,12 +55,12 @@ body {
 
 .start-page h1 {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .rules-caption {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 15px;
 }
 
@@ -71,6 +71,7 @@ body {
     border-radius: 10px;
     color: #555;
     text-align: left;
+    font-size: 12px; /* Added later */
 }
 
 .rules ul {
@@ -115,7 +116,7 @@ body {
     padding: 15px;
     border: none;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 14px;
     width: 100%; /* Make the button span the full width of the section */
     cursor: pointer;
     transition: transform 0.3s;
@@ -149,12 +150,12 @@ body {
 /* Underline Input and Textarea Styles */
 .form-group input, .form-group textarea {
     width: 100%;
-    padding: 8px 0;
+    padding: 5px 0;
     border: none;
     border-bottom: 2px solid #9e1b32; /* Dark red underline */
     background: transparent;
     color: #333;
-    font-size: 16px;
+    font-size: 12px;
     outline: none;
     transition: border-color 0.3s ease;
 }
@@ -184,7 +185,7 @@ body {
     border: none;
     padding: 12px 30px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
     transition: transform 0.3s;
     width: auto; /* Keep the width of the submit button appropriate */
@@ -202,7 +203,7 @@ body {
     border: none;
     padding: 8px 25px;
     border-radius: 30px;
-    font-size: 10px;
+    font-size: 6px;
     cursor: pointer;
     transition: transform 0.3s;
     width: auto; /* Keep the width of the submit button appropriate */
@@ -210,26 +211,26 @@ body {
     font-family: 'Poppins', sans-serif, 'Noto Serif Bengali', serif;
 }
 
-/* Shapes for fun design */
+/* Shapes for fun design */ /*
 .shape {
     position: absolute;
     border-radius: 50%;
     opacity: 0.3;
     animation: float 6s infinite;
-}
-
+} */
+/*
 .shape1 {
     width: 150px;
     height: 150px;
-    background: #d8d3de; /* Dark red shape */
+    background: #d8d3de; /* Dark red shape */ /*
     top: 10%;
     left: 5%;
-}
+} 
 
 .shape2 {
     width: 200px;
     height: 200px;
-    background: #e94b61; /* Light red shape */
+    background: #e94b61; /* Light red shape */ /*
     bottom: 15%;
     right: 10%;
 }
@@ -264,11 +265,11 @@ body {
 .shape-check {
     width: 100px;
     height: 100px;
-    background: #4caf50; /* Green for checkmark */
+    background: #4caf50; /* Green for checkmark */ /*
     border-radius: 50%;
     top: 50%;
     left: 15%;
-}
+} */
 
 .rules-caption {
   display: flex;
