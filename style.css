@@ -37,9 +37,9 @@ body {
 }
 
 @media (max-width: 1920px) {
-    .container {
+     .form-page {
         width: 100%;
-        margin: 20px;
+        margin: 40px;
     }
     
     .btn-start, .submit-btn {
